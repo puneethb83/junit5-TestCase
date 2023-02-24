@@ -8,7 +8,11 @@ class MathUtilsTest {
 
 	@Test
 	void test() {
-		System.out.println("this test case ran");
+		MathUtils mathUtils=new MathUtils();
+		int expected=3;
+		float actual=mathUtils.add(2, 1);
+		assertEquals(expected, actual);
+
 	}
 
 }
